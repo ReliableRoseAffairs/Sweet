@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" type="text/css" href="goi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-A1G4EJaU9BExIF9DK7XTrPPt2XoyKxsEjwMbUMws29ANq9knIm9lTLYwhbL9vCBbh2MNeA1grNa/ZpPp3R8uOQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  
+  
+    <style>
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      color: #ff6b26;
+      
+      box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            background-imagge: url('background.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Roboto Condensed, sans-serif;
+            line-height: 2.0;
+            
+        h1 {
+          color: #001041;
+    }
+  h3 { 
+    color: #fff;
+    border: 5px solid transparent;
+    background: #ff6b26;
+    font-family: Times New Roman;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 13px;
+    border-radius: 3px;
+    
+  }
+    h2 {
+      
+    color: #001041;
+    font-weight: 500;
+    }
+    p {
+      color: #333333;
+    }
+    h4 {
+      color: #001041;
+      font-family: roboto Condensed;
+      font-weight: 300;
+      font-size: 16px;
+      
+    }
+    
+    }
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #fffff;
+            border-radius: 0;
+            padding: 5px 20px;
+            background-color: #fff;
+            color: #fff;
+            
+        }
+
+        .logo-name {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #fff;
+            padding: 10px;
+          
+            display: none;
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            border: 1px solid #ff6b26;
+            border-radius: 5px;
+            color: #111;
+            display: space-between;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+         .hero-section {
+            background-image: url('log2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 66vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2BE8E6;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+        .hero-button1 {
+          display: relative;
+          padding: 13px 25px;
+            align-items: center;
+            color: #71D9D8;
+            background-color: #fff;
+            border: 1px solid #;
+            font-size: 16px;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+         .hero-button2 {
+          display: relative;
+          padding: 13px 35px;
+            align-items: center;
+            color: #fff;
+            background-color: #71D9D8;
+            border: 1px solid #ff;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-bottom: 40px;
+            color: #fff;
+            font-weight: 600;
+         }
+         .intro {
+           background-color: #ffffff;
+           border: 2px solid #f1f1f1;
+           border-radius: 5px;
+           text-align: center;
+           color: #111;
+           line-height: 1.5;
+          font-weight: 200;
+          font-family: Times New Roman;
+         }
+         .intro h1 {
+           font-size: 26px;
+           
+         }
+         .intro-btn {
+           display: relative;
+          padding: 13px 25px;
+            align-items: center;
+            background-color: #ff6b26;
+            color: #ffffff;
+            border: 1px solid #fff;
+            font-size: 10px;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 20px;
+        
+         }
+          .features-section {
+            padding: 50px 20px;
+            text-align: center;
+            color: #fff;
+            display: grid;
+            background-color: #f1f1f1;
+        }
+
+        .feature {
+            
+            margin: 0 20px;
+        }
+
+        .feature i {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #ffff;
+        }
+        .hero-section1 {
+            background-image: url('imgp.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+        .hero-button3 {
+          display: relative;
+          padding: 13px 25px;
+            align-items: center;
+            background-color: #ff6b26;
+            border: 1px solid #fff;
+            font-size: 16px;
+            color: #111;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            font-weight: 600;
+            
+        }
+        .hero-button3:hover {
+          background-color: black;
+          color: white;
+        }
+           .why-choose-us-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .panel {
+            display: flex;
+            width: calc(33.33% - 30px); /* Adjust width as needed */
+            margin: 20px;
+            padding: 110px;
+            background-color: #333333;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+          
+        }
+
+        .panel h3 {
+            margin-top: -30px;
+            font-size: 14px;
+            color: blue;
+            margin-left: -10px;
+            text-align: ;
+        }
+
+        
+
+        .learn-more-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more-button:hover {
+            background-color: #555;
+        }
+        .panel span {
+          color: red;
+        }
+        .container {
+  background: #f1f1f1;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 20px 20px 20px; /* Add margin on both sides */
+}
+.container img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.learn-more-btn {
+    background-color: #1f497d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+    background-color: #023036;
+}
+.btn-primary {
+  border: 0;
+  background-color: green;
+  border-radius: 0;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .1s;
+  outline: 0;
+  box-shadow: none;
+  font-family: 'roboto', sans-serif;
+}
+btn-primary:hover {
+  color: #fff;
+}
+  .investment-plans {
+      background-color: #EEF9FF;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.plan {
+    flex: 1 1 310px;
+    margin-right: 2px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c4e1e9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plan p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plan strong {
+    font-weight: bold;
+}
+
+ .plan-button {
+    background-color: #28bd88;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    margin-left: 90px;
+    font-weight: 600;
+    text-decoration: none;
+  
+    border-radius: 5px;
+    cursor: pointer;
+    ransition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+    background-color: #c4e1ef;
+}
+.stats-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.stats-grid {
+    display: flex;
+    flex: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.stat p {
+    margin-bottom: 5
+
+}
+ .hero-button4 {
+          display: relative;
+          padding: 6px 10px;
+            align-items: center;
+            color: white;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+            font-size: 16px;
+            
+            margin: 20px;
+            margin-left: 100px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-weight: 600;
+ }
+ .testimonial {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background: #87ceeb;
+}
+
+.testimonial p {
+  color: #001041;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    color: #13325a; /* FAQ question color */
+}
+
+.faq p {
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #fff;
+}  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {
+  font-size: 12px;
+  color: #fff;
+}  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {
+  font-size: 12px;
+  color: #fff;
+}  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {
+  font-size: 12px;
+  color: #fff;
+}  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {
+  font-size: 12px;
+  color: #fff;
+}  /* Microsoft Edge */
+hr {
+  background-color: #e7e7e7;
+  border: 0;
+  height: 1px;
+  margin: 15px 0;
+}
+.article {
+  background-color: #fff;
+}
+.footter {
+  background-color: #1f498d;
+  color: #fff;
+  width: 70px;
+  font-size: 12px;
+  display: flex;
+}
+.footer h2 {
+  font-size: 20px;
+}
+.footer-content {
+  font-size: 10px;
+  color: #fff;
+  
+}
+  
+.footer-links a {
+  color: #ffdab9;
+}
+ .footer-links span {
+  color: #fff;
+}
+  
+  
+}
+.social-icons {
+  width: 5px;
+  height: 5px;
+}
+.social-icons img {
+  display: column;
+  width: 30px;
+  height: 30px;
+}
+    </style>
+</head>
+<body>
+  
+    <section class="section-1">
+        <div class="section">
+            <div class="secure">
+                <div class="secure-1">
+                    <div class="slide current">
+                        <div class="picture">
+                            <img src="e.jpg" alt="" class="darklayer">
+                        </div>
+                        <div class="content ">
+                            <div class="income">Welcome to Rose Affairs: Where desires ignite and connections flourish. Explore passion like never before.</span></div>
+                            <p>Dive into a world of Romance  with Rose Affair Take the first step today.</p>
+                            <div class="button">
+                                <div class="started">
+                                    <a href="createaccount.html"><button>Get started</button></a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html"><button>Log in</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="picture">
+                            <img src="p6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="income">Welcome to Rose Affairs, where passion blooms and connections blossom into unforgettable experiences. .</span></div>
+                            <p>Discover tailored opportunities to elevate your Body and achieve your Sextual goals with confidence. Explore now!</p>
+                            <div class="button">
+                                <div class="started ">
+                                    <a href="login.html"><button class="others">Login</button></a>
+                                </div>
+                                <div class="login ">
+                                    <a href="createaccount.html"><button class="change">Get started</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="picture">
+                            <img src="picover.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="income">create account to continue to main dashboard  <span> port</span></div>
+                            <p>you are one steps close to meet and explore .</p>
+                            <div class="button">
+                                <div class="started">
+                                    <a href="createaccount.html"><button>Create account</button></a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html"><button>Login</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <div onclick="side_slides(-1)" class="arrow-1 left">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div onclick="side_slide(1)" class="arrow-1 right">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="space">
+                    <button  onclick="btm_slide(1)"></button>
+                    <button  onclick="btm_slide(2)"></button>
+                    <button  onclick="btm_slide(3)"></button>
+                </div>
+            </div>
+            </section>
+    <header class="header">
+        <div class="logo-name">
+            <img src="log1.png" alt="Logo" class="logo">
+            <h4>RoseAffairs</h4>
+        </div>
+        <img src="user.svg" alt="Profile" class="profile-icon" onclick="toggleDropdown()">
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="login.html">Sign in</a>
+            <a href="createaccount.html">Sign up</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </header>
+    
+  
+    </section>
+    <section class="intro">
+      <h1>Rose Affairs<br>I understand the importance of privacy and discretion.<br> My state-of-the-art security measures ensure that your personal information remains confidential, allowing you to engage in your wildest fantasies with confidence. <br>Whether you're searching for a casual hookup, an electrifying chat, or access to premium content. Rose has everything you need to satisfy your cravings.</h1><br>
+      <p>Don't wait any longer to fulfill your desires – get an account to view my features  now and unlock a world of excitement and satisfaction.</p>
+<br>
+      <a href="createaccount.html" class="intro-btn">Get Started</a></button>
+    </section>
+        </div>
+       <section class="features-section">
+        <div class="featurre">
+            <i class="fas fa-user-plus"></i>
+            <h2>Create Account</h2>
+            <p>Create account and proceed</p>
+        </div>
+        <div class="featurre">
+            <i class="fas fa-money-bill-wave"></i>
+            <h2>Make a choice</h2>
+            <p>Confirm to meet and smile and smile </p>
+        </div>
+        <div class="featurre">
+            <i class="fas fa-money-check-alt"></i>
+            <h2>Im available to make you smile again</h2>
+            <p>Online Service is available 24/7 days</p>
+        </div>
+    </section>
+    <section class="hero-section1">
+        <div class="hero-content">
+              <div class="video-container">
+        <iframe width="340" height="200" src="e.jpg" https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    
+            <h4>UNLEASHING THE POWER <br>OF ROMANCE</h4>
+            <p style="color:#111111">.</p>
+            <a href="rules.html" class="hero-button3">Learn More</a></button>
+            
+        </div>
+    </section>
+    <div class="footer">
+  <h2>BOONGROWTHNEXUS</h2>
+  <a href="index.html">HOME</a>/
+  <a href="security.html"> PRIVATE POLICY</a>/
+
+  <a href="rules.html">TERMS AND CONDITION</a>/
+
+  <hr>
+  <h2>HELP AND SUPPORT</h2>
+
+  <a href="createaccount.html"> REGISTER</a>/
+
+  <a href="contact.html">CONTACT </a>/
+  <a href="login.html">LOGIN</a>
+   <h2>Contact Me</h2>
+  <p>via Verified Telegram/ Email / Twitter/ Instagram
+  <p>Email: Reliablerose38@gmail.com</p>
+  <h2>Social Media</h2>
+  <div class="social-icons">
+    <a href="t.me/boonbeauty" target="_blank">Telegram</a>
+    <a href="mailto:Reliablerose38@gmail.com" target="_blank">Email</a>
+    <a href="Boonpleasure.com" target="_blank">Boon</a>
+    
+    </div>
+            
+            <div class="social-icons">
+                <a href="t.me/boonbeauty" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="link.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+    <!-- Add more social media links as needed -->
+  </div>
+</footer>
+    </script>
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            if (dropdownMenu.style.display === "none") {
+                dropdownMenu.style.display = "block";
+            } else {
+                dropdownMenu.style.display = "none";
+            }
+        }
+    </script>
+                        <script src="goi.js"></script>
+                <script src="overlay.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="book.css">
+    <script src='script.js' defer></script>
+<style>
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: Relative; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}</style>
+</head>
+<body>
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="cut.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> MEETUP </h3>
+                <p>Honest And Fulfulling</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $110.00 Per Hour (no limit) <span>$120.00</span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="cuttwo.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Live Session </h3>
+                <p>Facetime/Video Call LIVE till you c*m</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $35.00 <span>$90.00</span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="d.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Custom Videos & Pictures</h3>
+                <p>Tell me what you want and get it !</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $20.00 per 20 minutes of Requested Offer<span>$60</span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="cutthree.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Daddies Exotic Encounter</h3>
+                <p>3 in 1 Packages for daddies for anyone that got a premium or offer</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $40.00 <span>$85.00</span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="cut.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Complimentary Meets </h3>
+                <p>I offer complimentary meetings or consultations to those who have already engaged with my services or made a purchase of any amount 
+This means that once you have purchase any offer or buy vids  in my menu ,  service or purchased a offer , I'm more than happy to schedule meetings with you at no additional cost. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $ Not Specific( Get any offer and get a complimentary  <span></span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="cuttwo.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Squirt Session / ,Head Session/ Anal</h3>
+                <p>Squirt Moment to See me play with my pussy and you wont stop cumming<br>Head session: Deepthroat , I swallow , call me Headmaster</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $40.00 <span>$150.00</span> </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+<form>
+            <div id="form_content_container">
+                    <div id="form_content_inner_container">
+          <div class="inputBox">
+                <h3>Full name</h3>
+                <input type="text" id="full_name" placeholder="What do you want ?">
+            </div>
+            <div class="inputBox">
+                <h3>what Offer</h3>
+                <input type="text" placeholder="What do you want ?">
+            </div>
+            <div class="inputBox">
+                <h3>Incall or outcall</h3>
+                <input type="text" id="email" placeholder="Where to Meet">
+            </div>
+             <div class="inputBox">
+                <h3>Street Address</h3>
+                <input type="text" id="full_name" placeholder="Street">
+            </div>
+             <div class="inputBox">
+                <h3>Town</h3>
+                <input type="text" id="full_name"placeholder="Enter Town">
+            </div>
+             <div class="inputBox">
+                <h3>State</h3>
+                <input type="text" placeholder="What State?">
+            </div>
+             <div class="inputBox">
+                <h3>Zipcode</h3>
+                <input type="number" id="full_name" placeholder="Enter Zip Code">
+            </div>
+             <div class="inputBox">
+                <h3>Phone number</h3>
+                <input type="number" placeholder="Enter Number">
+            </div>
+             <div class="inputBox">
+                <h3>Email Address</h3>
+                <input type="email" placeholder="Enter Email Address">
+            </div>
+                               <input type="password" id="password" placeholder="Your account password">
+                        <div id
+             <div class="inputBox">
+                <h3>Alternative Text Channel</h3>
+                <input type="text" placeholder="Specify Alternative ways to reach you">
+            </div>
+            <div class="custom-seleclt" style="width:200px;">
+  <select>
+    <option value="0">Select Payment method:</option>
+    <option value="1">Cash app</option>
+    <option value="2">PayPal</option>
+    <option value="3">Zelle</option>
+    <option value="4">Chime</option>
+    <option value="5">Gift Card</option>
+    <option value="6">Bitcoin (Fast and Secured)</option>
+    <option value="7">Any Cryptocurrency Specify </option>
+    <option value="8">GooglePay</option>
+    
+  </select>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+           <div id="button_container">
+                            
+                            <button onclick="register()">Register</button>
+        </form>
+
+    </div>
+</div>
+</div>
+</div>
+</section>
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Rose Escapes </h3>
+            <p>Explore budget-friendly rendezvous options for passionate encounters. Discover affordable hotels, cozy hideaways, and intimate settings perfect for romantic liaisons without breaking the bank.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Romantic Rose Thrive</h3>
+            <p>Ignite sparks and kindle flames with our curated selection of romantic getaways and sultry destinations. From candlelit dinners to secluded retreats, indulge in love's embrace with our guide to nurturing intimate connections.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Rose Guide</h3>
+            <p>Prioritize your well-being and peace of mind with our comprehensive safety guide. Learn essential tips and precautions to ensure secure and discreet encounters, empowering you to explore your desires confidently</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Rose Around The World</h3>
+            <p>Embark on a journey of passion across the globe with our guide to exotic rendezvous and sensual adventures. From Parisian nights to tropical paradises, unlock the secrets of passion in every corner of the world.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Fastest Rose Travel</h3>
+            <p>Streamline your search for excitement and connection with our guide to swift rendezvous. Discover tips and tricks for efficient matchmaking and expedited encounters, ensuring your desires are met with haste.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Submissiveness</h3>
+            <p>Im 100% Submissive and i value Real connection and sweet Fun</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about me</h3>
+            <p>At Rose Affairs, Ibelieve in the power of connection and the thrill of exploration. I understand that every encounter is an opportunity for adventure, excitement, and intimate connection. Whether you're seeking a fleeting moment of passion or a deeper, ongoing connection, Rose Affairs is here to facilitate meaningful encounters between consenting adults..</p>
+        </div>
+        <div class="box">
+            <h3>Available locations</h3>
+            <a href="#">USA</a>
+            <a href="#">UK</a>
+            <a href="#">Canada</a>
+            <a href="#">Germany</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="book.html">book</a>
+            <a href="rules.html">packages</a>
+            <a href="#about">services</a>
+            
+            <a href="security.html">Security</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow me</h3>
+            <a href="t.me/boonbeauty">Telegram</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span>Reliable Rose </span> | all rights reserved! </h1>
+
+</section>
+
+</body>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="index.js"></script>
+</html>
